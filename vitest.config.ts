@@ -2,9 +2,9 @@ import { defineConfig } from 'vitest/config';
 
 export default defineConfig({
   test: {
-    env: {
-      ...(process.env.CI && { NO_COLOR: '1' }),
-    },
+    // env: {
+      // ...(process.env.CI && { NO_COLOR: '1' }),
+    // },
     coverage: {
       include: ['src/**/*.{ts,tsx}', 'lib/**/*.{ts,tsx}', 'bin.ts', 'index.ts'],
       ignoreEmptyLines: true,
